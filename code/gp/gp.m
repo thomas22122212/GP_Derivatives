@@ -30,11 +30,11 @@ fprintf('SE with gradients: (ell, s, sigma1) = (%.3f, %.3f, %.3f)\n', exp(params
 % Calculate interpolation coefficients
 sigma2 = sigma^2*ones(1, ntrain);
 K = se_kernel(X, params) + diag(sigma2);
-dmu = @(XX, co) dmean(XX, X, lambda, params, co);
 lambda = K\Y;
 
 % Function handle returning GP mean to be output
 mu = @(XX) mean(XX, X, lambda, params);
+dmu = @(XX, co) dmean(XX, X, lambda, params, co);
 end
 
 function ypred = mean(XX, X, lambda, params)
