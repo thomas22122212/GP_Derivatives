@@ -1,3 +1,13 @@
+# Alterations in this fork
+Two modifications to obtain the derivative of the mean function
+- mu can now be used with diff contained in the symbolic toolbox to obtain the symbolical derivative
+- dmu which returns values of the derivatives of mu at XX directly
+
+
+### ===============================================================================
+
+
+
 # Introduction
 This repository contains code necessary to not only reproduce the experiments presented in [Scalable Gaussian Process Regression with Derivatives @ NIPS 2018](https://arxiv.org/abs/1810.12283), but also for any
 wishing to use our methods.
