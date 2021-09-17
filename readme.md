@@ -1,7 +1,7 @@
 # Alterations in this fork
 Two modifications to obtain the derivative of the mean function
-- mu can now be used with diff contained in the symbolic toolbox to obtain the symbolical derivative
-- dmu which returns values of the derivatives of mu at XX directly
+- mu can now be used with diff contained in the symbolic toolbox to obtain the symbolic derivative
+- dmu returns the value of the derivative of mu at XX directly
 
 
 ### ===============================================================================
